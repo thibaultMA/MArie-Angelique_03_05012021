@@ -2,37 +2,15 @@ o{ color:#9356DC,
 #FF79DA,
 #99E2D0,
 #353535
+/* text-overflow: ellipsis; */
 } 
-@font-face{
-    font-family: "Shrikhand";
-   src: url("../font/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: 'robotoregular';
-    src: url('../font/roboto_regular_macroman/Roboto-Regular-webfont.eot');
-    src: url('../font/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
-         url('../font/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
-         url('../font/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');         
-}
+
 body{
    
     margin: auto;
     padding: 0;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
-body h1{
-    font-family: "Shrikhand";
-}
-body h2{
-    font-family: sans-serif;
-}
-body p,a,h3{
-    font-family: "robotoregular";
-}
+
             /* header */
 header img.logo{
     margin:20px 20% 5px 20%;
@@ -88,7 +66,8 @@ button{
     margin: 0 20px 0 20px;
     display: flex;
     flex-flow: column;
-    font-weight:bolder ;    
+    font-weight:bolder ;  
+    padding-bottom: 20px;  
 }
 .fonction img{
     height: 16px;
@@ -103,7 +82,7 @@ button{
     border-radius: 15px;
     align-items: center;
     position: relative;
-    box-shadow: 0px 2px 7px 0px #a3a3a3;
+    box-shadow: 0px 6px 6px -5px #a3a3a3
     
 }.liste p.un{
     font-weight:normal ;
@@ -130,8 +109,9 @@ img.survol{
             /* annonce */
 .annonce{
     padding: 0 20px 0 20px;
+    background: #f6f6f6;
 }            
-.restaurant{
+.restaurant .menu{
     position: relative;
     height: 200px;
     display: flex;
@@ -143,41 +123,24 @@ img.survol{
     margin-bottom: 20px;
 
 }
-.restaurant img.resto{
+.restaurant .menu img.resto{
     width: 100%;
     height: 70%;
     object-fit: cover;
     object-position:bottom;
     border-radius: 10px 10px 0 0;
 }
-.restaurant img.enchantée{
+.restaurant .menu img.enchantée{
     object-position:center -132px;
 }
-.restaurant h4,p{
+.restaurant .menu h4,p{
     margin: 5px;
 }
-.coeur{
+.menu .coeur{
     margin: 20px;
     height: 20px;
 }
-.coeur img.normal,.coeur img.survol{ 
-    height: 20px;
-    width: 20px;
-    transition: 4s;
-}
-.coeur img.survol{
-    display: none;
-}
-.coeur:hover .normal,
-.coeur:focus .normal{
-    display: none;
-}
-.coeur:hover .survol,
-.coeur:focus .survol
-{
-    display: block;
-}
-.nouveau{
+.menu .nouveau{
     position:  absolute;
     top: 10px;
     right: 10px;

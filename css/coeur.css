@@ -40,7 +40,7 @@
   .heart.icon:hover:after,
   .heart.icon:hover:before,
   .heart.icon:hover{
-      background-color: rgb(251, 2, 2);
+    background:#9356DC;
       border: none;
   }
   .heart.icon:hover{

@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* width: 320px; */
+    height: auto;
+}
+header{
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+}
+header svg,img{
+    height: 1.2rem;
+}
+
+header img{
+width: 90%;
+}
+                        /* main */
+
+.img-restaurant{
+    height: 300px;
+    width: 100%;
+}
+.img-restaurant img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+                        /* carte */
+.carte{
+    position: relative;
+    top: -40px;
+    border-radius: 40px 40px 0 0;
+    background: #FFF;
+    padding: 15px;
+}
+.titre{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.titre a.coeur{
+ margin: 20px;
+}
+.coeur .heart.icon{
+    position: initial;
+}
+                    /* menu */
+.servie{
+    display: inline-flex;
+    border: solid;
+    width: 100%;
+}

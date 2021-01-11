@@ -1,0 +1,19 @@
+#footer{
+  background: #353535;
+  padding: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    font-weight: bolder;
+    line-height: 2;
+}
+#footer h1{
+    margin: 0;
+}
+#footer *{
+    fill: #ffffff;
+    color: white;
+}
+#footer svg{
+    height: 1rem;
+}

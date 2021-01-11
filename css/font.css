@@ -1,0 +1,26 @@
+@font-face{
+    font-family: "Shrikhand";
+   src: url("../font/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('../font/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+         url('../font/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../font/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');         
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body h1{
+    font-family: "Shrikhand";
+    font-size: 20px;
+}
+body h2{
+    font-family: sans-serif;
+}
+body p,a,h3{
+    font-family: "robotoregular";
+}
