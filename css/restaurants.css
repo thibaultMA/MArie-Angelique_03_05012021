@@ -19,7 +19,9 @@ header img{
 width: 90%;
 }
                         /* main */
-
+.titre-vide{
+    display: none;
+}
 .img-restaurant{
     height: 300px;
     width: 100%;
@@ -30,13 +32,7 @@ width: 90%;
     object-fit: cover;
 }
                         /* carte */
-.carte{
-    position: relative;
-    top: -40px;
-    border-radius: 40px 40px 0 0;
-    background: #FFF;
-    padding: 15px;
-}
+
 .titre{
     display: inline-flex;
     justify-content: space-between;
@@ -49,9 +45,167 @@ width: 90%;
 .coeur .heart.icon{
     position: initial;
 }
+.etablissement{
+    position: relative;
+    top: -40px;
+    border-radius: 40px 40px 0 0;
+    background: #FFF;
+    padding: 15px; 
+}                        
+.menu , .carte{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+                      
+.carte{
+    animation: apparition .5s 0s linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.carte h3{
+    width: 100%;
+}                          
+
+
                     /* menu */
 .servie{
     display: inline-flex;
-    border: solid;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 7px 0px #a3a3a3;
+    border-radius: 20px;
     width: 100%;
+    max-width: 458px;
+    padding-left: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    animation: apparition 0s 0s linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* .servie:nth-child(2){ animation-delay: 3.2s;
+}
+.servie:nth-child(3){ animation-delay: 3.4s;
+}
+.servie:nth-child(4){ animation-delay: 3.6s;
+}
+.servie:nth-child(5){  animation-delay: 3.8s;
+} */
+.servie .prix{
+    align-self: flex-end;
+    text-align: center;
+    width: 30%;
+    font-weight:bold;
+}
+.servie .nom-plat{
+  width: 86%;
+}
+.servie .nom-plat h3, .servie .nom-plat p{
+    
+    margin: 5px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.servie .nom-plat p{
+    color: rgb(77, 77, 77);
+    font-size: 15px;
+}
+.check{
+    background:#99E2D0;
+    width: 0%;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0 20px 20px 0;
+
+}
+.check svg{
+    width: 2rem;
+    fill: #FFFFFF !important;
+    margin: auto;
+
+}
+.servie:hover .check{
+    animation: check .4s linear;
+    animation-fill-mode: forwards;
+}
+.servie:hover .check svg{
+    animation: rotation .4s linear ;
+
+}
+.servie:hover .nom-plat{
+    width: 58%;
+    transition: .3s;
+}
+                            /* bouton commander */
+.bouton{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100px;
+}                       
+button{
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    background:linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 7px 0px #a3a3a3;
+    width: 160px;
+}                   /* annim slide check */
+@keyframes check{   
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 53px;
+    }
+}
+@keyframes rotation{ /* annim rotation chech */
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes apparition{
+    0%{
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@media screen and (min-width:596px){
+    .etablissement{
+        display: flex;
+    flex-flow:  column;
+    align-items: center;
+    }
+    .titre,.carte{
+        max-width: 800px;
+        justify-content: space-between;
+    }
+    .servie{
+        /* flex: 2; */
+        max-width: 45%;
+       
+    }
+    .dessert .servie{
+        width: 45%;
+    }
 }
