@@ -157,7 +157,14 @@ button{
     margin-bottom: 25px;
     box-shadow: 0px 2px 7px 0px #a3a3a3;
     width: 160px;
-}                   /* annim slide check */
+    cursor: pointer;
+}
+button:hover{
+    animation: hover-bouton .3s 0s linear;
+
+    animation-fill-mode: forwards;
+}
+                            /* annim slide check */
 @keyframes check{   
     0%{
         width: 0px;
@@ -166,7 +173,8 @@ button{
         width: 53px;
     }
 }
-@keyframes rotation{ /* annim rotation chech */
+                        /* annim rotation chech */          
+@keyframes rotation{ 
     0%{
         transform: rotate(0deg);
     }
@@ -177,6 +185,7 @@ button{
         transform: rotate(360deg);
     }
 }
+                            /* apparition menu */
 @keyframes apparition{
     0%{
         transform: translateY(-15px);
@@ -188,6 +197,17 @@ button{
     100%{
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+@keyframes hover-bouton{
+    0%{
+        
+    }
+    50%{
+        background:linear-gradient(#FF79DA, #9356DC,#FF79DA);
+    }
+    100%{
+        background:linear-gradient(#9356DC, #FF79DA);
     }
 }
 @media screen and (min-width:596px){
