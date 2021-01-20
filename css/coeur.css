@@ -9,7 +9,7 @@
   border-left: solid 2px currentColor;
   border-bottom: solid 2px currentColor;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .heart.icon:before {
@@ -39,12 +39,10 @@
 }
 .heart.icon:hover:after,
 .heart.icon:hover:before,
-.heart.icon:hover{
-  
+.heart.icon:hover{  
     border: none;
-    animation: coeur .3s linear;
-    
-  animation-fill-mode: forwards;
+    animation: coeur .3s linear;    
+    animation-fill-mode: forwards;
 }
 .heart.icon:hover{
   width: 18px;

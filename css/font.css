@@ -24,3 +24,7 @@ body h2{
 body p,a,h3{
     font-family: "robotoregular";
 }
+.titre h2{
+    font-family: "Shrikhand";
+    font-size: 1.4rem;
+}

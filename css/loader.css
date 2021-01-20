@@ -1,12 +1,13 @@
 .loader{
     position:absolute ;
-    display: flex;
+    position: fixed;
+    display: flex ;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #9356DC;
-    animation: charge 6s  3s infinite ;
+    animation: charge 6s  1.5s ;
      animation-iteration-count: 1;  
     animation-fill-mode: forwards;
     z-index: 2;
@@ -14,16 +15,15 @@
 }
 
 .loading{
-    animation: charge 2.5s 4s;
-     animation-fill-mode: forwards;
+    animation: charge 2.5s 1.5s;
+    animation-fill-mode: forwards;
     display: inline-flex;  
 }
 .lettre{
-    animation: flash 1.5s  infinite linear ;
+    animation: flash 1.4s  infinite linear ;
     animation-iteration-count: 5;  
-
     animation-fill-mode: forwards;
-    line-height: 2;
+    
 }
 .lettre:nth-child(1){
     animation-delay: 0.1s;
@@ -55,8 +55,7 @@
 .lettre:nth-child(10){
     animation-delay: 1s;
 }
-
-
+                    /* annimation */
 @keyframes charge{
     0%{
        
@@ -80,7 +79,7 @@
     }
 }
 @keyframes flash {
-    0%{
+    0%{ 
         color: #FF79DA;
     }
     50%{
