@@ -50,9 +50,9 @@ main{
 .description p{
     color: gray;
 }
-.description button{  
+/* .description button{  
     width: 100%;
-}
+} */
         /* fonctionnement */
 .fonction{
     margin: 0 20px 0 20px;
@@ -67,13 +67,14 @@ main{
 }
 .liste{
     margin: 0 auto 18px ;
-    padding: 5px;
+    padding: 10px;
     display: inline-flex;
     width: 90%;
     border-radius: 15px;
     align-items: center;
     position: relative;
     box-shadow: 0px 6px 6px -5px #a3a3a3;  
+    background: #f6f6f685;
 }
 .liste p.un{
     font-weight:normal ;

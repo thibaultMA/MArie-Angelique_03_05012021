@@ -22,17 +22,18 @@
 }
                 /* boutons */
 button{
+    font-size: 1.2rem;
     border-radius: 30px;
     border: none;
-    padding: 15px;
+    padding: 20px;
     background:linear-gradient(to top ,#9356DC, #FF79DA ,#9356DC);
     background-size:100% 180%;
     background-position: top;
     color: white;
     margin-bottom: 25px;
     box-shadow: 0px 2px 7px 0px #a3a3a3;
-    width: 25%;
-    max-width: 250px;
+    width: 75%;
+    max-width: 385px;
     cursor: pointer;
     transition: background-position .1s ;
 }
