@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+                        /* header */
+header{
+    display: inline-flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+}
+header svg,img{
+    height: 1.2rem;
+}
+
+header img{
+    width: 90%;
+}
+                        /* main */
+.titre-vide{
+    display: none;
+}
+.img-restaurant{
+    height: 300px;
+    width: 100%;
+}
+.img-restaurant img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+                        /* carte */
+
+.titre{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.titre a.coeur{
+    margin: 20px;
+}
+.coeur .heart.icon{
+    position: initial;
+}
+.etablissement{
+    position: relative;
+    top: -40px;
+    border-radius: 40px 40px 0 0;
+    background: #FFF;
+    padding: 15px; 
+}                        
+.carte{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}                     
+.carte{
+    animation: apparition .5s 0s linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.carte h2{
+    width: 100%;
+    color: #3d3d3d;
+    font-size: 1rem;
+    height: 30px;
+    font-weight: normal;
+}
+.carte h2 span{
+    border-bottom:solid #99E2D0  3px ;
+    height: 30px;
+   padding-bottom: 5px;
+}                          
+                    /* menu */
+.servie{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 7px 0px #a3a3a3;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 458px;
+    padding-left: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    animation: apparition 1s -5s linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.servie:nth-child(2){ animation-delay: 1.2s;
+}
+.servie:nth-child(3){ animation-delay: 1.4s;
+}
+.servie:nth-child(4){ animation-delay: 1.6s;
+}
+.servie:nth-child(5){  animation-delay: 1.8s;
+}
+.servie .prix{
+    align-self: flex-end;
+    text-align: center;
+    width: 30%;
+    font-weight:bold;
+}
+.servie .nom-plat{
+  width: 86%;
+}
+.servie .nom-plat h3, .servie .nom-plat p{
+    margin: 5px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.servie .nom-plat p{
+    color: rgb(77, 77, 77);
+    font-size: 15px;
+}
+.check{
+    background:#99E2D0;
+    width: 0%;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0 20px 20px 0;
+}
+.check svg{
+    width: 2rem;
+    fill: #FFFFFF !important;
+    margin: auto;
+}
+.servie:hover .check{
+    animation: check .4s linear;
+    animation-fill-mode: forwards;
+}
+.servie:hover .check svg{
+    animation: rotation .4s linear ;
+}
+.servie:hover .nom-plat{
+    width: 58%;
+    transition: .3s;
+}
+                            /* bouton commander */
+.bouton{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100px;
+}                       
+
+                            /* annim slide check */
+@keyframes check{   
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 53px;
+    }
+}
+                        /* annim rotation chech */          
+@keyframes rotation{ 
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+                            /* apparition menu */
+@keyframes apparition{
+    0%{
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+                        /* media */
+@media screen and (min-width:596px){
+    .etablissement{
+        display: flex;
+    flex-flow:  column;
+    /* justify-content: center; */
+    align-items: center;
+    }
+    .titre,.carte{
+        max-width: 800px;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .carte h3{
+        width: 100%;
+    }
+    .servie{
+        max-width: 47%;
+    }
+    .dessert{
+        width: 100%;
+    }
+}
+@media screen and (min-width:1257px){
+    .etablissement{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .carte{
+        flex-flow: column;
+        align-items: center;
+        margin: 10px;
+        width: 48%;
+        max-width: none;
+    }
+    .servie{
+        width: 80%;
+        max-width: none;
+    }
+}
+@media screen and (min-width:1623px){
+    .titre{
+        max-width: none;
+        width: 70%;
+    }
+}
+@media screen and (min-width: 1919px){
+    body{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    main , header,footer{
+        max-width: 1920px;
+    }
+   
+}

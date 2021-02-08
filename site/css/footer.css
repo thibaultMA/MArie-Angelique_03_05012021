@@ -1,0 +1,53 @@
+#footer{
+    background: #353535;
+    padding: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    font-weight: bolder;
+    line-height: 2;
+}
+#footer h1{
+    margin: 0;
+}
+#footer *{
+    fill: #ffffff;
+    color: white;
+}
+#footer svg{
+    height: 1rem;
+}
+#footer .mini-titre{
+    margin: 10px;
+}
+@media screen and (min-width: 1919px){
+    #footer {
+        margin: auto;
+        padding-left: 1%;
+            max-width: 1920px;
+            width: 100%;
+    }
+}
+                /* boutons */
+button{
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    background:linear-gradient(to top ,#9356DC, #FF79DA ,#9356DC);
+    background-size:100% 180%;
+    background-position: top;
+    color: white;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 7px 0px #a3a3a3;
+    width: 75%;
+    max-width: 385px;
+    cursor: pointer;
+    transition: background-position .1s ;
+}
+button:hover{
+    box-shadow: 0px 2px 7px 2px #a3a3a3;
+    opacity: 0.8;
+    background-position: bottom;
+    transition: background-position .1s ;
+}
