@@ -233,3 +233,14 @@ header img{
         width: 70%;
     }
 }
+@media screen and (min-width: 1919px){
+    body{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    main , header,footer{
+        max-width: 1920px;
+    }
+   
+}

@@ -20,6 +20,14 @@
 #footer .mini-titre{
     margin: 10px;
 }
+@media screen and (min-width: 1919px){
+    #footer {
+        margin: auto;
+        padding-left: 1%;
+            max-width: 1920px;
+            width: 100%;
+    }
+}
                 /* boutons */
 button{
     font-size: 1.2rem;

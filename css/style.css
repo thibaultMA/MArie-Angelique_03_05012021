@@ -1,12 +1,7 @@
-/* o{ color:#9356DC,
-#FF79DA,
-#99E2D0,
-#353535
-text-overflow: ellipsis; 
-} */
 body{
     margin: auto;
     padding: 0;
+    
 }
 
             /* header */
@@ -50,9 +45,6 @@ main{
 .description p{
     color: gray;
 }
-/* .description button{  
-    width: 100%;
-} */
         /* fonctionnement */
 .fonction{
     margin: 0 20px 0 20px;
@@ -104,6 +96,8 @@ img.survol{
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
+    margin-bottom: 20px;
+    
 }        
 .annonce h2{
     width: 100%;
@@ -162,7 +156,20 @@ img.survol{
     }
 }          
 @media screen and (min-width:1919px){
+    main{
+        align-items: center;
+    }
+    .description{
+        width: 100%;
+    }
+    .annonce{
+        max-width:1920px;
+        
+    }
     .restaurant{
         flex: 1;
+    }
+    #footer{
+        padding-left: 13%;
     }
 }             
